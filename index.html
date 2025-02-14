@@ -1,75 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-        .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .cta {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            width: 200px;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CodeAssurance</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: KnightOne
+  * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+  * Updated: Oct 16 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-    <div class="header">
-        <h1>Welcome to Our Landing Page</h1>
-        <p>Your catchy sub-header goes here</p>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Code Assurance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="#about">Saber mas</a>
+
     </div>
+  </header>
 
-    <div class="content">
-        <h2>About Us</h2>
-        <p>
-            This is where you can describe your product, service, or business.
-            Explain the benefits and what makes it unique. Ensure that your message is clear and concise.
-        </p>
+  <main class="main">
 
-        <h2>Our Services</h2>
-        <p>
-            List your services or features briefly here. Point out why they matter to your potential customers.
-        </p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-        <a href="#" class="cta">Call to Action</a>
-    </div>
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
-    <div class="footer">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
-        <p><a href="#" style="color: white;">Privacy Policy</a> | <a href="#" style="color: white;">Terms of Service</a></p>
-    </div>
+      <div class="container d-flex flex-column align-items-center text-center">
+        <h2 data-aos="fade-up" data-aos-delay="100">Bienvenidos a nuestra página</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Building trust through quality code</p>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre nosotros</h2>
+        <p>Somos una empresa enfocada en brindar soluciones integrales de QA y desarrollo de software.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Nuestros valores que guian todos nuestros trabajos y proyectos son:
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span><strong>Excelencia: </strong>Luchar por la excelencia en la prestación de servicios de garantía de calidad, manteniendo altos estándares en pruebas y validación de software.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span><strong>Integridad: </strong>Actuar con integridad, transparencia y conducta ética en todas las interacciones con clientes, colegas y en la ejecución de actividades de control de calidad.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span><strong>Innovación: </strong>Fomentar la innovación continua mediante la adopción de nuevas herramientas, técnicas y enfoques para mejorar constantemente los procesos de control de calidad y ofrecer soluciones más efectivas y eﬁcientes.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p><strong>Misión:</strong> “Creamos soluciones tecnológicas de alta calidad para emprendedores e industrias que buscan transformar sus operaciones digitales, garantizando la velocidad y la calidad en el proceso.”</p>
+            <p><strong>Visión: </strong>“Convertirnos en la empresa líder de desarrollo de software a medida en Latinoamérica, reconocida por la calidad e innovación de nuestras soluciones.”</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <p>Servicios con los que contamos apra apoyar a nuestros clientes</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>AUTOMATIZACION DE PROCESOS</h3>
+              </a>
+              <p>Optimizamos sus workflows mediante la implementación de soluciones tecnológicas que reduzcan la carga manual, aumenten la eficiencia y mejoren la precisión en sus operaciones diarias.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>DESARROLLO DE SISTEMAS DE SOFTWARE A MEDIDA </h3>
+              </a>
+              <p>Creación de soluciones tecnológicas personalizadas que se adapten perfectamente a las necesidades específicas de su empresa, desde aplicaciones web hasta sistemas complejos de gestión empresarial.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>STAFFING DE DIVERSOS PERFILES IT</h3>
+              </a>
+              <p>Suministramos profesionales altamente capacitados en diversas áreas de TI, adaptando nuestro equipo a las necesidades cambiantes de su organización para garantizar un.optimo desempeño.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Algunos de nuestros proyectos mas recientes</h3>
+            <p>A continuacion listamos algunos de nuestros proyectos mas recientes que nos llevaron a encarar nuevos desafios y a perfeccionarnos como profesionales</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="features-image col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features-bg.jpg" alt=""></div>
+
+          <div class="col-lg-6 order-lg-1">
+
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-archive flex-shrink-0"></i>
+              <div>
+                <h4>Portal de cotizacion de materiales</h4>
+                <p>Sistema integral que contempla todas las funcionalidades necesarias para que tu negocio de insumos de construccion pueda publicar en un portal especializado en materiales de construccion sus ofertas y captar nuevos clientes mediante la centralizacion de la oferta</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-basket flex-shrink-0"></i>
+              <div>
+                <h4>Fertas</h4>
+                <p>Sitio donde las tiendas de ropa y accesorios pueden cargar y crear cupones de promociones que permite llegar a mas clientes y fomentar la fidelizacion de los actuales</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <div>
+                <h4>Amperios</h4>
+                <p>Sistema de gestion especializado para la gestion de diversas obras tanto publicas como civiles, se contempla desde el presupuestado de materiales hasta la asistencia diaria de cada trabajador</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <div>
+                <h4>Putato Suscripciones</h4>
+                <p>Plataforma que permite subir contenido audiovisual apuntado a creadores de contenido. Se ofrecen suscripciones de pago procesados por pasarelas conocidas como Mercado Pago.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0 clients-wrap">
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="subheading">
+          <h3>Lo que hemos conseguido hasta ahora</h3>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clientes</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Proyectos</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Horas de soporte</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Ingenieros</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+
+    </section><!-- /Pricing Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+54 3547 592998</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>ignacio.perez@code-assurance.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
